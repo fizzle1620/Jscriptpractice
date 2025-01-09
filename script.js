@@ -1,33 +1,33 @@
-let day = 2;
+function showDay() {
+    let day = document.getElementById('dayInput').value;
+    let outputText = '';
 
-
-switch(day){
-    
-    case 1:
-        console.log(`it's monday`);
-        break;
+    // Switch statement to check the input value
+    switch (parseInt(day)) {
+        case 1:
+            outputText = "It's Monday";
+            break;
         case 2:
-        console.log(`it's tuesday`);
-        break;
+            outputText = "It's Tuesday";
+            break;
         case 3:
-        console.log(`it's wednesday`);
-        break;
+            outputText = "It's Wednesday";
+            break;
         case 4:
-        console.log(`it's thursday`);
-        break;
+            outputText = "It's Thursday";
+            break;
         case 5:
-        console.log(`it's friday`);
-        break;
+            outputText = "It's Friday";
+            break;
         case 6:
-        console.log(`it's saturday`);
-        break;
+            outputText = "It's Saturday";
+            break;
         case 7:
-        console.log(`it's sunday`);
-        break;
+            outputText = "It's Sunday";
+            break;
         default:
-            console.log(`${day} is not a day`)
+            outputText = `${day} is not a valid day (1-7). Please try again.`;
+    }
 
-                
-
-
+    document.getElementById('output').innerText = outputText;
 }
