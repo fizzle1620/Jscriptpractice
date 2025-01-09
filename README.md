@@ -1,0 +1,2 @@
+# Jscriptpractice
+ My Jscript journey
